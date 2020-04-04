@@ -42,8 +42,8 @@
   </form>
   
   <!-- Card -->
-<div class="card card-cascade list_list" style="margin:20px;" >
-
+<div class="card card-cascade " style="margin:20px;" >
+<div class="list_list">
   <!-- Card content -->
   <div class="card-body card-body-cascade text-center">
   
@@ -55,7 +55,14 @@
     <hr>
 	<label>Items: <span class="badge badge-info">12</span></label>&nbsp;&nbsp;
 	<label>Cost: <span class="badge badge-primary">&nbsp;&cent;12</span></label>&nbsp;&nbsp;
-	<label>Paid: <span class="badge badge-danger">No</span></label>
+	<label>Status: <span class="badge badge-danger">Packing</span></label>
+  </div>
+  </div>
+    <div class="btn-group" role="group" aria-label="Basic example" >
+  <button type="button" class=" btn btn-sm btn-outline-primary waves-effect " style="color:blue;"  data-toggle="modal" data-target="#editbasketModal"><i class="fas fa-edit"></i>&nbsp;</a></button>
+  <button type="button" class=" btn btn-sm btn-outline-danger waves-effect " style="color:red;"><i class="fas fa-trash-alt"></i>&nbsp;</a></button>
+  <button type="button" class=" btn btn-sm btn-outline-primary waves-effect " style="color:red;"><i class="fas fa-recycle"></i>&nbsp;</a></button>
+  <button type="button" class=" btn btn-sm btn-outline-success waves-effect " style="color:red;" data-toggle="modal" data-target="#shareModal"><i class="fas fa-share-alt"></i>&nbsp;</a></button>
   </div>
 
 </div>
@@ -63,7 +70,7 @@
 
   <!-- Card -->
 <div class="card card-cascade list_list" style="margin:20px;" >
-
+<div class="list_list">
   <!-- Card content -->
   <div class="card-body card-body-cascade text-center">
   
@@ -75,14 +82,52 @@
     <hr>
 		<label>Items: <span class="badge badge-info">12</span></label>&nbsp;&nbsp;
 	<label>Cost: <span class="badge badge-primary">&nbsp;&cent;12</span></label>&nbsp;&nbsp;
-	<label>Paid: <span class="badge badge-success">Yes</span></label>
+	<label>Status: <span class="badge badge-success">Unpaid</span></label>
   </div>
+</div>
 
+<div class="btn-group" role="group" aria-label="Basic example" >
+  <button type="button" class=" btn btn-sm btn-outline-primary waves-effect " style="color:blue;"  data-toggle="modal" data-target="#editbasketModal"><i class="fas fa-edit"></i>&nbsp;</a></button>
+  <button type="button" class=" btn btn-sm btn-outline-danger waves-effect " style="color:red;"><i class="fas fa-trash-alt"></i>&nbsp;</a></button>
+  <button type="button" class=" btn btn-sm btn-outline-primary waves-effect " style="color:red;"><i class="fas fa-recycle"></i>&nbsp;</a></button>
+  <button type="button" class=" btn btn-sm btn-outline-success waves-effect " style="color:red;" data-toggle="modal" data-target="#shareModal"><i class="fas fa-share-alt"></i>&nbsp;</a></button>
+  </div>
+  
 </div>
 <!-- Card -->
  
 
+  <!--share Modal -->
 
+<div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="">Share Code</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <form style="margin:20px;">
+	  
+	  <div class="color:green;"> 
+	  <h6>Share code to Let people view, use, or pay for your list.</h6>
+	  </div>
+  <div class="md-form input-group mb-3">
+  
+  <input type="text" class="form-control" value="jbvdf383b3"  aria-label="" aria-describedby="material-addon1">
+</div>
+
+<div class="md-form input-group">
+  <button type="button" class="form-control btn btn-sm aqua-gradient waves-effect "><i class="fas fa-money"></i>&nbsp;</a>Copy</button>
+</div>
+
+  </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
